@@ -48,17 +48,19 @@ if(choice == "yes")
   {
     hav_fun(questList[i].question,questList[i].answer); 
   }
-}
 
-console.log("Congrats!! you scored: ", score);
-console.log("------------------------------------------")
-var highScores=[
+  console.log("Congrats!! you scored: ", score);
+  console.log("------------------------------------------")
+  var highScores=[
                   {name:"Dam",score: 10},
                   {name:name,score: score}
                 ]
 
-console.log("Check out Highest Scores : ")
-for(i=0;i<highScores.length;i++)
-{
-  console.log((i+1)+" Name : "+highScores[i].name + ", Score : "+highScores[i].score)
+  console.log("Check out Highest Scores : ")
+  for(i=0;i<highScores.length;i++)
+  {
+    console.log((i+1)+" Name : "+highScores[i].name + ", Score : "+highScores[i].score)
+  }
 }
+
+
